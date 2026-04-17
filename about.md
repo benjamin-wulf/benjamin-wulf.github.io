@@ -7,7 +7,7 @@ title: About
 bio here
 
 ### Core Competencies
-* **Analysis:** blabla
+* **Analysis:** blablablobloblableee
 * **Tools:** bla
 * **Frameworks:** blabla
 

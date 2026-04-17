@@ -6,16 +6,59 @@
   <title>{{ page.title }} | {{ site.title }}</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
   <style>
+      
+      /* pico modification */
+      /* Orange color for light color scheme (Default) */
+/* Can be forced with data-theme="light" */
+[data-theme=light],
+:root:not([data-theme=dark]),
+:host:not([data-theme=dark]) {
+  --pico-text-selection-color: rgba(244, 93, 44, 0.25);
+  --pico-primary: #bd3c13;
+  --pico-primary-background: #d24317;
+  --pico-primary-underline: rgba(189, 60, 19, 0.5);
+  --pico-primary-hover: #942d0d;
+  --pico-primary-hover-background: #bd3c13;
+  --pico-primary-focus: rgba(244, 93, 44, 0.5);
+  --pico-primary-inverse: #fff;
+}
+
+/* Orange color for dark color scheme (Auto) */
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]),
+  :host:not([data-theme]) {
+    --pico-text-selection-color: rgba(245, 107, 61, 0.1875);
+    --pico-primary: #f56b3d;
+    --pico-primary-background: #d24317;
+    --pico-primary-underline: rgba(245, 107, 61, 0.5);
+    --pico-primary-hover: #f8a283;
+    --pico-primary-hover-background: #e74b1a;
+    --pico-primary-focus: rgba(245, 107, 61, 0.375);
+    --pico-primary-inverse: #fff;
+  }
+}
+/* Orange color for dark color scheme (Forced) */
+/* Enabled if forced with data-theme="dark" */
+[data-theme=dark] {
+  --pico-text-selection-color: rgba(245, 107, 61, 0.1875);
+  --pico-primary: #f56b3d;
+  --pico-primary-background: #d24317;
+  --pico-primary-underline: rgba(245, 107, 61, 0.5);
+  --pico-primary-hover: #f8a283;
+  --pico-primary-hover-background: #e74b1a;
+  --pico-primary-focus: rgba(245, 107, 61, 0.375);
+  --pico-primary-inverse: #fff;
+}
+
+
+
     /* custom css */
     body { max-width: 800px; margin: 0 auto; padding: 20px; }
     nav { border-bottom: 1px solid #555; padding-bottom: 10px; margin-bottom: 30px; display: flex; gap: 20px; }
     nav a { font-weight: bold; text-decoration: none; }
 
-    :root
-    {
-        --pico-primary: #00ff41;
-        --pico-font-family-monospace: "JetBrains Mono", "Courier New", monospace;
-    }
+
   </style>
 </head>
 <body>
