@@ -1,2 +1,1 @@
-# This will eventually be my website!
-For now its a very early work in progress
+Personal site, work in progress, will update later.
