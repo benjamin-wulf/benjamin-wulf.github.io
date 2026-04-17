@@ -1,0 +1,15 @@
+---
+layout: default
+title: Research & Reports
+---
+<h1>Research & Threat Briefs (coming soon)</h1>
+<p>Public threat advisories, deep-dives, and malware analysis notes.</p>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <small><strong>{{ post.date | date: "%Y-%m-%d" }}</strong></small> <br>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
