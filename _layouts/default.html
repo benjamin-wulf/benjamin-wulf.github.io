@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }} | {{ site.title }}</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <style>
       
       /* pico modification */
@@ -28,11 +31,17 @@
 @media only screen and (prefers-color-scheme: dark) {
   :root:not([data-theme]),
   :host:not([data-theme]) {
-    --pico-text-selection-color: rgba(245, 107, 61, 0.1875);
-    --pico-primary: #f56b3d;
+    --pico-font-family: Raleway, sans-serif;
+    --pico-background-color: #e8d5b7;
+    --pico-color: #0e2431;
+    --pico-h1-color: #0e2431;
+    --pico-h2-color: #0e2431;
+    --pico-h3-color: #0e2431;
+    --pico-text-selection-color: rgba(0, 0, 0, 0.188);
+    --pico-primary: #cb1010ed;
     --pico-primary-background: #d24317;
-    --pico-primary-underline: rgba(245, 107, 61, 0.5);
-    --pico-primary-hover: #f8a283;
+    --pico-primary-underline: rgba(131, 0, 0, 0.921);
+    --pico-primary-hover: #eb0202;
     --pico-primary-hover-background: #e74b1a;
     --pico-primary-focus: rgba(245, 107, 61, 0.375);
     --pico-primary-inverse: #fff;
@@ -42,7 +51,7 @@
 /* Enabled if forced with data-theme="dark" */
 [data-theme=dark] {
   --pico-text-selection-color: rgba(245, 107, 61, 0.1875);
-  --pico-primary: #f56b3d;
+  --pico-primary: #f5623d;
   --pico-primary-background: #d24317;
   --pico-primary-underline: rgba(245, 107, 61, 0.5);
   --pico-primary-hover: #f8a283;

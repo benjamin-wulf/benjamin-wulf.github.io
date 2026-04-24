@@ -9,4 +9,4 @@ Welcome to page whoami, etc.
 
 ### Current Activity
 * **Latest Report:** Check out my newest analysis (coming soon) [Research](/research.html)
-* **Active Project:** Add latest project.
+* **Active Project:** RSS Reader & News Aggregator ([details](/projects.html)/[GitHub](https://github.com/benjamin-wulf/local-cyber-feed))
