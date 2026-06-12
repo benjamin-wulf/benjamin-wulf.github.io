@@ -11,7 +11,7 @@ title: Home
       Cyber Threat Intelligence<br>Malware Analysis | GREM
     </p>
     <p>
-        this is probably where I talk about kicking hackers' butts or whatever
+        If you're reading this you, for some reason, didn't get redirected to my GitHub, will return here when I have a chance to update my website properly! If you want to check out my work you can do so <a href="https://github.com/benjamin-wulf">here</a>.
     </p>
     
     <a href="/about" role="button" class="outline">Read Full Bio</a>
